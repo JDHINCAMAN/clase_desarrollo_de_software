@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Formulario con tablas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body background="v.jpg" width="385" height="744">
+        <form>
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="nombres"></td>
+                </tr>
+                <tr>
+                    <td>Apellido:</td>
+                    <td><input type="text" name="apellidos"></td>
+                </tr>
+                <tr>
+                    <td>Fecha Nacimiento:</td>
+                    <td><input type="date" name="nombre"></td>
+                </tr>
+                <tr>
+                    <td>Genero:</td>
+                    <td>
+                        <input type="radio" name="genero" value="F" >Femenino
+                        <input type="radio" name="genero" value="M" >Masculino
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="hobbies" value="F" >Fornite
+                        <input type="checkbox" name="hobbies" value="F" >Futbol
+                        <input type="checkbox" name="hobbies" value="F" >Pintar
+                        <input type="checkbox" name="hobbies" value="F" >Musica
+                        <input type="checkbox" name="hobbies" value="F" >Programar
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ciudad donde vives:</td>
+                    <td>
+                        <select>
+                            <option>Bogota</option>
+                            <option>Medellin</option>
+                            <option>Barranquilla</option>
+                            <option>Cali</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Describa tu vida:</td>
+                    <td>
+                        <textarea name="descripcion"></textarea>
+                    </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <input type="button" onclick="javascript: alert('Grabado con exito!! gracias!')" value="Grabar datos">
+                    </td>
+                </tr>   
+            </table>
+        </form>
+    </body>
+</html>

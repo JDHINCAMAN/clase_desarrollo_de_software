@@ -1,0 +1,21 @@
+.tableslayer{
+    color: rgb(255, 255, 255);
+    border-color: red;
+    text-align: center;
+}
+
+.tabletoxic{
+    color: rgb(255, 255, 255);
+    border-color:rgb(255, 238, 0);
+    text-align: center;
+}
+
+.tablemunicipal{
+    color: rgb(255, 255, 255);
+    border-color: green;
+    text-align: center;
+}
+
+p{
+    color: white;
+}

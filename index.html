@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--• Se utiliza para añadir información sobre la página. Esta
+            información puede ser utilizada por los buscadores.
+            • Los buscadores consultan la información de la
+            etiqueta <meta>.
+            • Se pueden especificar los atributos name (tipo de
+            información) y content (valor de dicha información).
+            • No necesita etiqueta de cierre.
+            • También se utiliza para indicarle al navegador alguna
+            información o alguna acción que debe realizar. En este caso
+            se utiliza el atributo http-equiv-->
+        <meta name="author" content="JD HINCAMAN">
+        <meta name="description" content="Introduccion a HTML">
+        <meta name="keywords" content="Introduccion html basico UdeA">
+        <meta http-equiv="Refresh" content="30">
+
+        <!--La etiqueta <link> define un enlace entre el documento y
+            algún recurso externo.-->
+        <!--rel: escribe la relación entre el documento y el destino del
+            enlace.
+            • type: especifica el tipo de documento a enlazar. El más                    común es type=”text/css”.
+            • href: especifica la localización del documento enlazado.-->
+        <!--<link rel="stylesheet" type="text/css" href="estilos.css">-->
+            
+        <!--• La etiqueta <style> define hojas de estilo para el
+                documento actual.
+            • Esta etiqueta debe ser ubicada en la cabecera del
+                documento.-->
+        <style type="text/css">
+            h2 {font-style: italic;}
+            p {color: rgb(17, 0, 255);}
+            table{
+                color: white;
+                background-color: black;
+                border-color: red;
+                text-align: center;
+            }
+            .color{
+                background-color: blue;
+            }
+            .color2{
+                background-color: white;
+                color: black;
+            }
+            #colorHora{
+                background-color: white;
+                color: red;
+            }
+        </style>
+
+        <title>
+            Introduccion a HTML
+        </title>
+    </head>
+
+    <body bgcolor="yellow">
+        <header>PRUEBA</header>
+        <h2>Encabezado en italica</h2>
+        <p>Parrafo de color azul</p>
+        <!--espacios en blanco: &nbsp
+            salto de linea: <br>-->
+        <p>
+            &lt; Introducci&oacute;n &nbsp; &nbsp; &nbsp; a
+            <br> <br> <br>
+            HTML &gt;
+        </p>
+        <p>
+            <small>
+                <b>
+                    <cite>
+                        ><del>
+                            TEXTO DE PRUEBA
+                        </del>
+                    </cite>
+                </b>
+            </small>
+        </p>
+        <h1>Encabezado h1</h1>
+        <h2>Encabezado h2</h2>
+        <h3>Encabezado h3</h3>
+        <h4>Encabezado h4</h4>
+        <h5>Encabezado h5</h5>
+        <h6>Encabezado h6</h6>
+
+        <!--• Un hiperenlace, hipervínculo o vínculo no es más que un
+        enlace, que al ser pulsado lleva a una página o archivo.
+        • Aquellos elementos (texto, imágenes, etc.) sobre los que
+        se desee insertar un enlace han de encontrarse entre las
+        etiquetas <a> y </a>.
+        • A través del atributo href se especifica la página o el archivo
+        a la que está asociado el enlace.
+        • _blank:
+            • Abre el documento vinculado en una ventana nueva del
+            navegador.
+        • _self:
+            • Es la opción predeterminada. Abre el documento
+            vinculado en el mismo marco o ventana que el vínculo.-->
+        <a href="https://lms.misiontic2022udea.com" target="_blank">Visita misionTIC</a>
+
+        <!--Atributos de una tabla
+        • align: alinea horizontalmente la tabla con respecto a su
+        entorno.
+        • background: permite poner un fondo para la tabla a partir
+        de un enlace a una imagen.
+        • bgcolor: da color de fondo a la tabla.
+        • border: define el número de pixeles del borde principal.
+        • bordercolor: define el color del borde.
+        • cellpadding: define, en pixeles, el espacio entre los bordes
+        de la celda y el contenido de la misma.
+        • cellspacing: define el espacio entre los bordes (en pixeles).
+        • height: define la altura de la tabla en pixeles o porcentaje.
+        • width: define la anchura de la tabla en pixeles o porcentaje.-->
+
+        <!--Atributos de una celda
+        • bgcolor =”nombre del color / número hexadecimal”.
+        Define el color de la celda o fila.
+        • bordercolor=”nombre del color / número hexadecimal”.
+        Define el color del borde de la celda.
+        • align=”top / middle / bottom”. Elegimos el lugar en el cual
+        el texto es colocado. Top (arriba), middle (centro) y bottom
+        (abajo).
+        • valign=”left / center / right”. Alineación del texto
+        izquierda (left), centro (center) o derecha (right)
+        • colspan=”n”. Expande una celda horizontalmente tantas
+        celdas como el valor asignado a n.
+        • rowspan=”n”. Expande una celda verticalmente tantas
+        celdas como el valor asignado a n.
+        • width=”n”. El valor n indica la anchura de la tabla en
+        pixeles (200) o porcentaje (20%). Este atributo también se
+        puede aplicar a las celdas <td>.
+        • height =”n”. El valor n define la altura de la celda en pixeles
+        o porcentaje.-->
+        <table align="center" cellpading="10px" cellspacing="0" border="2">
+            <tr bgcolor="green">
+                <td>
+                    Encabezado tabla
+                </td>
+            </tr>
+            <tr>
+                <td class="color2">Hora</td>
+                <td class="color2">Lunes</td>
+                <td class="color2">Martes</td>
+                <td class="color2">Miercoles</td>
+                <td class="color2">Jueves</td>
+                <td class="color2">Viernes</td>
+                <td class="color2">Sabado</td>
+                <td class="color2">Domingo</td>
+            </tr>
+            <tr>
+                <td id="colorHora">6:22</td>
+                <td class="color">X</td>
+                <td></td>
+                <td></td>
+                <td class="color">X</td>
+                <td class="color">X</td>
+                <td></td>
+                <td class="color">X</td>
+            </tr>
+        </table>
+
+        <ol>
+            <li>Esto es una lista ordenada</li>
+            <li>Esto es una lista ordenada</li>
+            <li>Esto es una lista ordenada</li>
+            <li>Esto es una lista ordenada</li>
+            <li>Esto es una lista ordenada</li>
+        </ol>
+        <ul>
+            <li>Esto es una lista normal</li>
+            <li>Esto es una lista normal</li>
+            <li>Esto es una lista normal</li>
+            <li>Esto es una lista normal</li>
+            <li>Esto es una lista normal</li>
+        </ul>
+        <img src="imagen.jpg" width="300" height="200">
+        <footer>PRUEBA</footer>
+    </body>
+</html>
