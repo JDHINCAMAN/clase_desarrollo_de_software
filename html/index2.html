@@ -85,6 +85,14 @@
         <h4>Encabezado h4</h4>
         <h5>Encabezado h5</h5>
         <h6>Encabezado h6</h6>
+        <b>Texto en negtita</b>
+        <br>
+        <i>Texto en italica</i>
+        <br>
+        <strike>Texto tachado</strike>
+        <br>
+        <small>Texto pequeño</small>
+        <br>
 
         <!--• Un hiperenlace, hipervínculo o vínculo no es más que un
         enlace, que al ser pulsado lleva a una página o archivo.
@@ -100,6 +108,8 @@
             • Es la opción predeterminada. Abre el documento
             vinculado en el mismo marco o ventana que el vínculo.-->
         <a href="https://lms.misiontic2022udea.com" target="_blank">Visita misionTIC</a>
+        <br>
+        <a href="./prueba6.html"> Pagina local</a>
 
         <!--Atributos de una tabla
         • align: alinea horizontalmente la tabla con respecto a su
@@ -176,7 +186,71 @@
             <li>Esto es una lista normal</li>
             <li>Esto es una lista normal</li>
         </ul>
-        <img src="imagen.jpg" width="300" height="200">
+        <!--no es recomendable usar width y height en el html
+        es mejor editar esto en el css-->
+        <img src="imagen.jpg" width="400">
+        <br>
+        <!--atributo controls para que en el navegador aparezca la 
+        opcion de reproducir el video o audio-->
+        <video src="./Social Media - 1360.mp4" width="400" controls></video>
+        <br>
+        <audio src="./TOXIC HOLOCAUST - Wild Dogs (Official Music Video)_160k.mp3" controls></audio>
+        <br>
+
+        <!--Formularios-->
+        <h2>Esto es un fomulario</h2>
+        <form>
+            <!--Atributo required para que sea obligatorio llenar ese
+            capo-->
+            <h3>Entrada de texto</h3>
+            <input type="text" required>
+            <h3>Boton</h3>
+            <input type="button" value="Nombre">
+            <h3>Seleccionar una opcion</h3>
+            <input type="checkbox">
+            <h3>Escoger un color</h3>
+            <input type="color">
+            <h3>Escoger una fecha</h3>
+            <input type="date">
+            <h3></h3>
+            <input type="datetime">
+            <h3></h3>
+            <input type="datetime-local">
+            <h3></h3>
+            <input type="email">
+            <h3></h3>
+            <input type="file">
+            <h3></h3>
+            <input type="hidden">
+            <h3></h3>
+            <input type="image">
+            <h3></h3>
+            <input type="month">
+            <h3></h3>
+            <input type="number">
+            <h3></h3>
+            <input type="password">
+            <h3></h3>
+            <input type="radio">
+            <h3></h3>
+            <input type="range" min="1" max="15">
+            <h3></h3>
+            <input type="reset">
+            <h3></h3>
+            <input type="search">
+            <h3></h3>
+            <input type="tel">
+            <h3></h3>
+            <input type="time">
+            <h3></h3>
+            <input type="url">
+            <h3></h3>
+            <input type="week">
+            <h3></h3>
+            <input type="submit">
+            <!--atributo readonly para no poder escribir-->
+            <textarea readonly>Hola</textarea>
+        </form>
         <footer>PRUEBA</footer>
     </body>
 </html>
