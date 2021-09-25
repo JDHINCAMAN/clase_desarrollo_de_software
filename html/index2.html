@@ -15,8 +15,10 @@
             se utiliza el atributo http-equiv-->
         <meta name="author" content="JD HINCAMAN">
         <meta name="description" content="Introduccion a HTML">
-        <meta name="keywords" content="Introduccion html basico UdeA">
-        <meta http-equiv="Refresh" content="30">
+        <meta name="keywords" content="Introduccion html,UdeA,universidad de antioquia,html">
+        <meta name="copyright" content="Nombre empresa">
+        <!--indexar o no una pagina, noindex para paginas ocultas-->
+        <meta name="robots" content="index">
 
         <!--La etiqueta <link> define un enlace entre el documento y
             algún recurso externo.-->
@@ -31,7 +33,10 @@
             • Esta etiqueta debe ser ubicada en la cabecera del
                 documento.-->
         <style type="text/css">
+            h1 {color: rgb(17, 0, 255);}
             h2 {font-style: italic;}
+            h3 {font-style: oblique;}
+            h4 {color: rgb(17, 0, 255);}
             p {color: rgb(17, 0, 255);}
             table{
                 color: white;
@@ -55,202 +60,297 @@
         <title>
             Introduccion a HTML
         </title>
+        <link rel="icon" href="./random.jpg">
     </head>
 
-    <body bgcolor="yellow">
-        <header>PRUEBA</header>
-        <h2>Encabezado en italica</h2>
-        <p>Parrafo de color azul</p>
-        <!--espacios en blanco: &nbsp
-            salto de linea: <br>-->
-        <p>
-            &lt; Introducci&oacute;n &nbsp; &nbsp; &nbsp; a
-            <br> <br> <br>
-            HTML &gt;
-        </p>
-        <p>
-            <small>
-                <b>
-                    <cite>
-                        ><del>
-                            TEXTO DE PRUEBA
-                        </del>
-                    </cite>
-                </b>
-            </small>
-        </p>
-        <h1>Encabezado h1</h1>
-        <h2>Encabezado h2</h2>
-        <h3>Encabezado h3</h3>
-        <h4>Encabezado h4</h4>
-        <h5>Encabezado h5</h5>
-        <h6>Encabezado h6</h6>
-        <b>Texto en negtita</b>
-        <br>
-        <i>Texto en italica</i>
-        <br>
-        <strike>Texto tachado</strike>
-        <br>
-        <small>Texto pequeño</small>
+    <body bgcolor="black">
+        <!--Barra de navegacion-->
+        <div style="background-color: aqua;">
+            <header>
+                <h1>Este es el header</h1>
+                <nav>
+                    <ul>
+                        <li><a href="./prueba6.html">Inicio</a></li>
+                        <li><a href="./prueba5.html">Mi cuenta</a></li>
+                        <li><a href="./prueba4.html">Sobre nosotros</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div style="background-color: chartreuse;">
+            <!--id para ir auna parte de la pagina en especifico-->
+            <a href="#texto">Click aqui para ir a Encabezados y texto</a><br>
+            <a href="#links">Click aqui para ir a Links</a><br>
+            <a href="#tablas">Click aqui para ir a Tablas</a><br>
+            <a href="#listas">Click aqui para ir a Listas</a><br>
+            <a href="#multimedia">Click aqui para ir a Contenido multimedia</a><br>
+            <a href="#formularios">Click aqui para ir a Formularios</a><br>
+            <a href="#articulos">Click aqui para ir a Articulos</a><br>
+            <a href="#extra">Click aqui para ir a Contenido extra</a>
+        </div>
+
+        <div id="texto" style="background-color: crimson;">
+            <h2>Encabezado en italica</h2>
+            <p>Parrafo de color azul</p>
+            <!--espacios en blanco: &nbsp
+                salto de linea: <br>-->
+            <p>
+                &lt; Introducci&oacute;n &nbsp; &nbsp; &nbsp; a
+                <br> <br> <br>
+                HTML &gt;
+            </p>
+            <p>
+                <small>
+                    <b>
+                        <cite>
+                            ><del>
+                                TEXTO DE PRUEBA
+                            </del>
+                        </cite>
+                    </b>
+                </small>
+            </p>
+            <h1>Encabezado h1</h1>
+            <h2>Encabezado h2</h2>
+            <h3>Encabezado h3</h3>
+            <h4>Encabezado h4</h4>
+            <h5>Encabezado h5</h5>
+            <h6>Encabezado h6</h6>
+            <b>Texto en negtita</b>
+            <br>
+            <i>Texto en italica</i>
+            <br>
+            <strike>Texto tachado</strike>
+            <br>
+            <small>Texto pequeño</small>
+        </div>
         <br>
 
-        <!--• Un hiperenlace, hipervínculo o vínculo no es más que un
-        enlace, que al ser pulsado lleva a una página o archivo.
-        • Aquellos elementos (texto, imágenes, etc.) sobre los que
-        se desee insertar un enlace han de encontrarse entre las
-        etiquetas <a> y </a>.
-        • A través del atributo href se especifica la página o el archivo
-        a la que está asociado el enlace.
-        • _blank:
-            • Abre el documento vinculado en una ventana nueva del
-            navegador.
-        • _self:
-            • Es la opción predeterminada. Abre el documento
-            vinculado en el mismo marco o ventana que el vínculo.-->
-        <a href="https://lms.misiontic2022udea.com" target="_blank">Visita misionTIC</a>
-        <br>
-        <a href="./prueba6.html"> Pagina local</a>
-
-        <!--Atributos de una tabla
-        • align: alinea horizontalmente la tabla con respecto a su
-        entorno.
-        • background: permite poner un fondo para la tabla a partir
-        de un enlace a una imagen.
-        • bgcolor: da color de fondo a la tabla.
-        • border: define el número de pixeles del borde principal.
-        • bordercolor: define el color del borde.
-        • cellpadding: define, en pixeles, el espacio entre los bordes
-        de la celda y el contenido de la misma.
-        • cellspacing: define el espacio entre los bordes (en pixeles).
-        • height: define la altura de la tabla en pixeles o porcentaje.
-        • width: define la anchura de la tabla en pixeles o porcentaje.-->
-
-        <!--Atributos de una celda
-        • bgcolor =”nombre del color / número hexadecimal”.
-        Define el color de la celda o fila.
-        • bordercolor=”nombre del color / número hexadecimal”.
-        Define el color del borde de la celda.
-        • align=”top / middle / bottom”. Elegimos el lugar en el cual
-        el texto es colocado. Top (arriba), middle (centro) y bottom
-        (abajo).
-        • valign=”left / center / right”. Alineación del texto
-        izquierda (left), centro (center) o derecha (right)
-        • colspan=”n”. Expande una celda horizontalmente tantas
-        celdas como el valor asignado a n.
-        • rowspan=”n”. Expande una celda verticalmente tantas
-        celdas como el valor asignado a n.
-        • width=”n”. El valor n indica la anchura de la tabla en
-        pixeles (200) o porcentaje (20%). Este atributo también se
-        puede aplicar a las celdas <td>.
-        • height =”n”. El valor n define la altura de la celda en pixeles
-        o porcentaje.-->
-        <table align="center" cellpading="10px" cellspacing="0" border="2">
-            <tr bgcolor="green">
-                <td>
-                    Encabezado tabla
-                </td>
-            </tr>
-            <tr>
-                <td class="color2">Hora</td>
-                <td class="color2">Lunes</td>
-                <td class="color2">Martes</td>
-                <td class="color2">Miercoles</td>
-                <td class="color2">Jueves</td>
-                <td class="color2">Viernes</td>
-                <td class="color2">Sabado</td>
-                <td class="color2">Domingo</td>
-            </tr>
-            <tr>
-                <td id="colorHora">6:22</td>
-                <td class="color">X</td>
-                <td></td>
-                <td></td>
-                <td class="color">X</td>
-                <td class="color">X</td>
-                <td></td>
-                <td class="color">X</td>
-            </tr>
-        </table>
-
-        <ol>
-            <li>Esto es una lista ordenada</li>
-            <li>Esto es una lista ordenada</li>
-            <li>Esto es una lista ordenada</li>
-            <li>Esto es una lista ordenada</li>
-            <li>Esto es una lista ordenada</li>
-        </ol>
-        <ul>
-            <li>Esto es una lista normal</li>
-            <li>Esto es una lista normal</li>
-            <li>Esto es una lista normal</li>
-            <li>Esto es una lista normal</li>
-            <li>Esto es una lista normal</li>
-        </ul>
-        <!--no es recomendable usar width y height en el html
-        es mejor editar esto en el css-->
-        <img src="imagen.jpg" width="400">
-        <br>
-        <!--atributo controls para que en el navegador aparezca la 
-        opcion de reproducir el video o audio-->
-        <video src="./Social Media - 1360.mp4" width="400" controls></video>
-        <br>
-        <audio src="./TOXIC HOLOCAUST - Wild Dogs (Official Music Video)_160k.mp3" controls></audio>
+        <div id="links" style="background-color: pink;">
+            <!--• Un hiperenlace, hipervínculo o vínculo no es más que un
+            enlace, que al ser pulsado lleva a una página o archivo.
+            • Aquellos elementos (texto, imágenes, etc.) sobre los que
+            se desee insertar un enlace han de encontrarse entre las
+            etiquetas <a> y </a>.
+            • A través del atributo href se especifica la página o el archivo
+            a la que está asociado el enlace.
+            • _blank:
+                • Abre el documento vinculado en una ventana nueva del
+                navegador.
+            • _self:
+                • Es la opción predeterminada. Abre el documento
+                vinculado en el mismo marco o ventana que el vínculo.-->
+            <a href="https://lms.misiontic2022udea.com" target="_blank">Visita misionTIC</a>
+            <br>
+            <a href="./prueba6.html"> Pagina local</a>
+        </div>
         <br>
 
-        <!--Formularios-->
-        <h2>Esto es un fomulario</h2>
-        <form>
-            <!--Atributo required para que sea obligatorio llenar ese
-            capo-->
-            <h3>Entrada de texto</h3>
-            <input type="text" required>
-            <h3>Boton</h3>
-            <input type="button" value="Nombre">
-            <h3>Seleccionar una opcion</h3>
-            <input type="checkbox">
-            <h3>Escoger un color</h3>
-            <input type="color">
-            <h3>Escoger una fecha</h3>
-            <input type="date">
-            <h3></h3>
-            <input type="datetime">
-            <h3></h3>
-            <input type="datetime-local">
-            <h3></h3>
-            <input type="email">
-            <h3></h3>
-            <input type="file">
-            <h3></h3>
-            <input type="hidden">
-            <h3></h3>
-            <input type="image">
-            <h3></h3>
-            <input type="month">
-            <h3></h3>
-            <input type="number">
-            <h3></h3>
-            <input type="password">
-            <h3></h3>
-            <input type="radio">
-            <h3></h3>
-            <input type="range" min="1" max="15">
-            <h3></h3>
-            <input type="reset">
-            <h3></h3>
-            <input type="search">
-            <h3></h3>
-            <input type="tel">
-            <h3></h3>
-            <input type="time">
-            <h3></h3>
-            <input type="url">
-            <h3></h3>
-            <input type="week">
-            <h3></h3>
-            <input type="submit">
-            <!--atributo readonly para no poder escribir-->
-            <textarea readonly>Hola</textarea>
-        </form>
-        <footer>PRUEBA</footer>
+        <div id="tablas" style="background-color: gold;">
+            <!--Atributos de una tabla
+            • align: alinea horizontalmente la tabla con respecto a su
+            entorno.
+            • background: permite poner un fondo para la tabla a partir
+            de un enlace a una imagen.
+            • bgcolor: da color de fondo a la tabla.
+            • border: define el número de pixeles del borde principal.
+            • bordercolor: define el color del borde.
+            • cellpadding: define, en pixeles, el espacio entre los bordes
+            de la celda y el contenido de la misma.
+            • cellspacing: define el espacio entre los bordes (en pixeles).
+            • height: define la altura de la tabla en pixeles o porcentaje.
+            • width: define la anchura de la tabla en pixeles o porcentaje.-->
+
+            <!--Atributos de una celda
+            • bgcolor =”nombre del color / número hexadecimal”.
+            Define el color de la celda o fila.
+            • bordercolor=”nombre del color / número hexadecimal”.
+            Define el color del borde de la celda.
+            • align=”top / middle / bottom”. Elegimos el lugar en el cual
+            el texto es colocado. Top (arriba), middle (centro) y bottom
+            (abajo).
+            • valign=”left / center / right”. Alineación del texto
+            izquierda (left), centro (center) o derecha (right)
+            • colspan=”n”. Expande una celda horizontalmente tantas
+            celdas como el valor asignado a n.
+            • rowspan=”n”. Expande una celda verticalmente tantas
+            celdas como el valor asignado a n.
+            • width=”n”. El valor n indica la anchura de la tabla en
+            pixeles (200) o porcentaje (20%). Este atributo también se
+            puede aplicar a las celdas <td>.
+            • height =”n”. El valor n define la altura de la celda en pixeles
+            o porcentaje.-->
+            <table align="center" cellpading="10px" cellspacing="0" border="2">
+                <tr bgcolor="green">
+                    <td>
+                        Encabezado tabla
+                    </td>
+                </tr>
+                <tr>
+                    <td class="color2">Hora</td>
+                    <td class="color2">Lunes</td>
+                    <td class="color2">Martes</td>
+                    <td class="color2">Miercoles</td>
+                    <td class="color2">Jueves</td>
+                    <td class="color2">Viernes</td>
+                    <td class="color2">Sabado</td>
+                    <td class="color2">Domingo</td>
+                </tr>
+                <tr>
+                    <td id="colorHora">6:22</td>
+                    <td class="color">X</td>
+                    <td></td>
+                    <td></td>
+                    <td class="color">X</td>
+                    <td class="color">X</td>
+                    <td></td>
+                    <td class="color">X</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="listas" style="background-color: lightblue;">
+            <ol>
+                <li>Esto es una lista ordenada</li>
+                <li>Esto es una lista ordenada</li>
+                <li>Esto es una lista ordenada</li>
+                <li>Esto es una lista ordenada</li>
+                <li>Esto es una lista ordenada</li>
+            </ol>
+            <ul>
+                <li>Esto es una lista normal</li>
+                <li>Esto es una lista normal</li>
+                <li>Esto es una lista normal</li>
+                <li>Esto es una lista normal</li>
+                <li>Esto es una lista normal</li>
+            </ul>
+        </div>
+
+        <div id="multimedia" style="background-color: lightsalmon;">
+            <!--no es recomendable usar width y height en el html
+            es mejor editar esto en el css-->
+            <img src="imagen.jpg" alt="Codigo html" title="Codigo" width="400">
+            <br>
+            <!--atributo controls para que en el navegador aparezca la 
+            opcion de reproducir el video o audio-->
+            <video src="./Social Media - 1360.mp4" width="400" controls></video>
+            <br>
+            <audio src="./TOXIC HOLOCAUST - Wild Dogs (Official Music Video)_160k.mp3" controls></audio>
+        </div>
+
+        <div id="formularios" style="background-color: limegreen;">
+            <!--Formularios-->
+            <h2>Esto es un fomulario</h2>
+            <form>
+                <!--Atributo required para que sea obligatorio llenar ese
+                capo-->
+                <h3>Entrada de texto</h3>
+                <input type="text" required value="Texto predeterminado">
+                <h3>Boton</h3>
+                <input type="button" value="Nombre">
+                <h3>Seleccionar una opcion</h3>
+                <input type="checkbox">
+                <h3>Escoger un color</h3>
+                <input type="color">
+                <h3>Escoger una fecha</h3>
+                <input type="date">
+                <h3>
+                    Ingresar tiempo y fecha (hora, minuto, segundo y fracción de segundo) basado en la zona horaria UTC
+                </h3>
+                <input type="datetime">
+                <h3>Lo mismo pero automatico</h3>
+                <input type="datetime-local">
+                <h3>Ingresar un email</h3>
+                <input type="email">
+                <h3>Subir un archivo</h3>
+                <input type="file">
+                <h3>Booleano para esconder partes de la Pagina</h3>
+                <input type="hidden">
+                <h3>Imagen escondida</h3>
+                <input type="image">
+                <h3>Escoger un mes del año</h3>
+                <input type="month">
+                <h3>Elegir un numero</h3>
+                <input type="number">
+                <h3>Para contraseñas</h3>
+                <input type="password">
+                <h3>Marcar una opcion</h3>
+                <input type="radio">
+                <input type="radio">
+                <h3>Elegir un rango</h3>
+                <input type="range" min="1" max="15">
+                <h3>Restablecer todos los campos a su valor predeterminado</h3>
+                <input type="reset">
+                <h3>Campo para hacer busquedas</h3>
+                <input type="search">
+                <h3>Validar numeros telefonicos</h3>
+                <!--atributo pattern para ingresar obligatoriamnte
+                una cantidad de numeros-->
+                <input type="tel" name="telefono" pattern="[0-9]{9}">
+                <h3>Ingresar hora</h3>
+                <input type="time">
+                <h3>Ingresar una url</h3>
+                <input type="url">
+                <h3>Ingresar una semana</h3>
+                <input type="week">
+                <h3>Boton para enviar el formulario</h3>
+                <input type="submit">
+                <h3>Escribir o leer texto</h3>
+                <!--atributo readonly para no poder escribir-->
+                <textarea readonly>Hola</textarea>
+            </form>
+        </div>
+        
+        <div id="articulos" style="background-color: orange;">
+            <article>
+                <section>
+                    <h1>Titulo del articulo</h1>
+                    <h2>
+                        Lorem ipsum dolor
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Libero, ea vel. Voluptas 
+                        assumenda dicta veniam cum nobis a. Quidem 
+                        quae sapiente velit et tempore fugiat eveniet 
+                        pariatur nam libero voluptatum. Lorem ipsum dolor 
+                        sit, amet consectetur adipisicing elit. Adipisci 
+                        delectus at quo quia voluptatem doloremque aut, ea 
+                        quod perferendis temporibus, veniam repellat ducimus. 
+                        Explicabo, quidem? Sit, sed? Cupiditate, rem fugit?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reprehenderit dolor facilis laboriosam ex, repellendus error fugit voluptatibus dignissimos aliquam blanditiis, facere illum eius officia! Itaque aut assumenda possimus consequatur.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam a magnam tenetur aspernatur itaque neque. Repellat dolorum porro exercitationem ut. Rerum, harum enim eius aut tempore cupiditate totam molestias saepe.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae perferendis asperiores aperiam eum eius repudiandae sunt quia excepturi quo, ducimus hic, veniam exercitationem, nam quaerat sit praesentium iure voluptate!
+                    </p>
+                </section>
+            </article>
+        </div>
+
+        <div id="extra" style="background-color: palevioletred;">
+            <aside>
+                <h2>Contenido extra</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Debitis mollitia optio iusto modi provident 
+                    accusamus, ratione sint quisquam aliquam facere ut 
+                    possimus, pariatur, dolorem repellat. Eaque voluptate 
+                    nulla quisquam incidunt!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis ipsum neque corporis voluptas. Commodi, maiores explicabo! Quas ipsam quis, obcaecati minima vel quo temporibus modi quia reprehenderit, fugiat doloribus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quas dolorem illum culpa distinctio, id nulla numquam, quos quod delectus voluptatum expedita ea harum aliquam, explicabo esse dolorum repellat voluptatem?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium nihil consequatur excepturi! Quisquam voluptatibus amet, quaerat officiis animi praesentium aperiam omnis totam cum eius dolorem architecto, veritatis, pariatur dicta.
+                </p>
+            </aside>
+        </div>
+
+        <footer>
+            <h1>Este es el footer</h1>
+            <h4>Copyright - Todos los derechos reservados</h4>
+            <p>Siguenos en nuestras <b>redes</b></p>
+            <a href="https://www.instagram.com/jd_hincaman/">Instagram</a>
+            <a href="https://www.instagram.com/jd_hincaman/">Facebook</a>
+            <a href="https://www.instagram.com/jd_hincaman/">YouTube</a>
+            <a href="https://www.instagram.com/jd_hincaman/">Twitter</a>
+        </footer>
     </body>
 </html>
