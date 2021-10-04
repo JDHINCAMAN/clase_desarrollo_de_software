@@ -86,7 +86,6 @@ const User = () => {
   };
 
   const mostrarModalInsertar = () => {
-
   };
 
   const cerrarModalInsertar = () => {
@@ -101,7 +100,7 @@ const User = () => {
   };
 
   const insertar = () => {
-
+    
   }
 
   return (
