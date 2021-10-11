@@ -1,0 +1,11 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react", "mobx"],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-runtime"
+    ]
+}
+
+/*Babel es una herramienta opcional que nos permite transformar nuestro
+código JS de última generación a un código de JavaScript que cualquier
+navegador o versión de Node.js pueda interpretar.*/
