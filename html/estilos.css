@@ -18,9 +18,20 @@ h1 {background-color: rgb(40, 95, 95);
     transform: rotate(5deg);
 }
 
-h2 {font-style: italic;}
+h2 {
+    font-style: italic;
+    border: 1px solid rgba(12, 223, 238, 0.664);
+    padding: 10px;
 
-h3 {font-style: oblique;}
+}
+
+h3 {
+    font-style: oblique;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
 
 h4 {color: rgb(0, 153, 255);}
 
